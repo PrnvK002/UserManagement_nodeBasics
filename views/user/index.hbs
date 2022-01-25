@@ -1,0 +1,18 @@
+
+
+<div class="container" style="margin-top:5rem">
+  <h3>Foods Available</h3>
+  <div class="row g-2">
+    {{#each products}}
+      <div class="card col-md-3 m-3" style="width: 18rem;">
+        <img src="{{this.image}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <p class="card-text">{{this.price}} rs</p>
+          <p class="card-text">{{this.description}}</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

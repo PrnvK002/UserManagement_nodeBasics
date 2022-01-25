@@ -1,0 +1,31 @@
+<div class="container" style="margin-top:8rem">
+  {{#if msg}}
+    <div class="alert alert-danger" role="alert">
+      {{msg}}
+    </div>
+  {{/if}}
+  <form action="/login" method="post">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        name="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        name="password"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/create_account" class="ps-5">
+      Don't have an account ? Create One</a>
+  </form>
+</div>
